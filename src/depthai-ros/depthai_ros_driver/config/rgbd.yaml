@@ -1,0 +1,21 @@
+# /oak:
+#   ros__parameters:
+#     camera:
+#       i_nn_type: none
+#     stereo:
+#       i_subpixel: true
+/oak:
+  ros__parameters:
+    camera:
+      i_pipeline_type: RGBD
+      i_usb_speed: SUPER   # 🔥 QUAN TRỌNG
+
+    stereo:
+      i_enable_depth: true
+      i_enable_rectification: true
+
+      i_resolution: 400P   # 🔥 dùng profile chuẩn
+      i_fps: 30
+
+      i_left_right_check: true
+      i_subpixel: false
